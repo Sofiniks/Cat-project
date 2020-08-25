@@ -1,0 +1,47 @@
+@import './mixins.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    background: url(./img/Pattern.jpg);
+    min-width: 100wh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.heading {
+    color: white;
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 26px;
+
+    @include phones {
+        text-align: center;
+    }
+}
+
+.cards {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablets {
+        justify-content: center;
+
+    }
+
+    @include phones {
+        
+    }
+
+}

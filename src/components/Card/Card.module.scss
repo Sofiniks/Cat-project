@@ -1,0 +1,155 @@
+@import '../../mixins.scss';
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+    &:nth-of-type(2) {
+        @include tablets {
+            margin-right: 0;
+        }
+    }
+
+    @include tablets {
+       margin-right: 20px;
+       margin-top: 3%;
+    }
+
+    @include phones {
+        margin-right: 0;
+    }
+
+
+}
+
+.CardElement {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%, 0 12%);
+    width: 320px;
+    height: 480px;
+    color: #000;
+    background-color: white;
+    border: 4px solid #1698d9;
+    border-radius: 10px;
+    padding: 21px 51px;
+    position: relative;
+    cursor: pointer;
+
+    &:first-child {
+        color: #666666;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        border: 4px solid #2ea8e6;
+
+    .amount {
+        background-color: #2ea8e6;
+    }
+    }
+
+    
+
+}
+
+.CardElement.active {
+    border: 4px solid #d91667;
+
+    .amount {
+        background-color: #d91667;
+    }
+}
+
+.CardElement.disabled{
+    pointer-events: none;
+    border: 4px solid #b3b3b3;
+
+    .amount {
+        background-color: #b3b3b3;
+    }
+
+    &:after {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(#f2f2f2, 0.6);
+    }
+    
+}
+
+
+
+.CardElement.selectedHover {
+    border: 4px solid #e62e7a;
+
+    .amount {
+        background-color: #e62e7a;
+    }
+}
+
+.topTextSelectedHover {
+    color: #e62e7a;
+}
+
+h2, h3 {
+    color: #000;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+
+
+.mainImage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.amount {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 80px;
+    height: 80px;
+    background-color: #1698d9;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 21px;
+}
+
+
+
+.info {
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+}
+
+.infoDisabled {
+    color: #ffff66;
+}
