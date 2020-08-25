@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Cat-project/static/css/main.5f361e03.chunk.css",
+    "main.js": "/Cat-project/static/js/main.ce3194b3.chunk.js",
+    "main.js.map": "/Cat-project/static/js/main.ce3194b3.chunk.js.map",
+    "runtime-main.js": "/Cat-project/static/js/runtime-main.ab39e10a.js",
+    "runtime-main.js.map": "/Cat-project/static/js/runtime-main.ab39e10a.js.map",
+    "static/js/2.56fc4aa3.chunk.js": "/Cat-project/static/js/2.56fc4aa3.chunk.js",
+    "static/js/2.56fc4aa3.chunk.js.map": "/Cat-project/static/js/2.56fc4aa3.chunk.js.map",
+    "index.html": "/Cat-project/index.html",
+    "precache-manifest.2a5222aab614514a08cdb5f285385c47.js": "/Cat-project/precache-manifest.2a5222aab614514a08cdb5f285385c47.js",
+    "service-worker.js": "/Cat-project/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/Cat-project/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.56fc4aa3.chunk.js.LICENSE.txt": "/Cat-project/static/js/2.56fc4aa3.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Cat-project/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab39e10a.js",
+    "static/js/2.56fc4aa3.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.ce3194b3.chunk.js"
+  ]
+}
